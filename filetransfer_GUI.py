@@ -73,8 +73,6 @@ def receive_file():
     main_frame.pack_forget()
     receive_frame_1.pack()
     IP = gethostip()
-    # IP = socket.gethostbyname(socket.gethostname())
-    #IP = '192.168.246.200'
     server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     ADDR = (IP,PORT)
     server_socket.bind(ADDR)
